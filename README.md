@@ -17,8 +17,10 @@ The unit test I made is in it
 
 ## How to run the API
 1- run this command in your terminal:  npm install
+
 2-To run the API I made, open postman and put the link http://localhost:3000/marsRover and make it POST function
 and the body has three objects attributs which are 1-currentCoordinates, 2-command , 3-obstacles
+
 example:
 {
    "currentCoordinates":"(4,2,EAST)",
@@ -26,6 +28,8 @@ example:
    "obstacles":[]
 }
 
+
 ## How to run the unit test
 In the project terminal write this command: mocha test
+
 and this will run all of the tests I wrote
