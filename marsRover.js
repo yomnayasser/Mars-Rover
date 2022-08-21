@@ -4,7 +4,6 @@ class MarsRover {
   tempY = 0;
   index = 0;
   obstacle = "";
-  test=""
   constructor(x, y, direction,obstacles="") {
     this.x = x;
     this.y = y;
@@ -42,7 +41,7 @@ class MarsRover {
     }
 
     this.tempY = this.y; //save last index of Y incase of obstacle found in the next move
-    this.tempX = this.x; ///save last index of X incase of obstacle found in the next move
+    this.tempX = this.x; //save last index of X incase of obstacle found in the next move
   }
 
   moveForward() {
@@ -78,6 +77,7 @@ class MarsRover {
   move(commands) {
     try {
       this.getDirectionIndex();
+      
       for (let i in commands) {
         if (commands[i] === "F") {
           this.moveForward();
